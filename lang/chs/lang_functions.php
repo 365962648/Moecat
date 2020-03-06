@@ -148,7 +148,14 @@ $lang_functions = array
     'text_h' => "时",
     'text_none' => "无",
     'text_anonymous' => "匿名",
-    'text_promoted_torrents_note' => "<a href=\"?spstate=2\" target=\"_self\" title=\"查看免费种子\"><font class='free'><b>免费</b></font></a> | <a href=\"?spstate=3\" target=\"_self\" title=\"查看两倍上传量种子\"><font class='twoup'><b>2x上传</b></font></a> | <a href=\"?spstate=4\" target=\"_self\" title=\"查看免费且两倍上传种子\"><font class='twoupfree'><b>免费&amp;2x上传</b></font></a> | <a href=\"?spstate=5\" target=\"_self\" title=\"查看50%下载种子\"><font class='halfdown'><b>50%下载</b></font></a> | <a href=\"?spstate=6\" target=\"_self\" title=\"查看50%下载且两倍上传种子\"><font class='twouphalfdown'><b>50%下载&amp;2x上传</b></font></a> | <a href=\"?spstate=7\" target=\"_self\" title=\"查看30%下载种子\"><font class='thirtypercent'><b>30%下载</b></font></a>",
+    'text_promoted_torrents_note' => `
+        <a onclick="searchPro('spstate',2)" href="javascript:void(0);" title="查看免费种子"><b class='free'>免费</b></a> |
+        <a onclick="searchPro('spstate',3)" href="javascript:void(0);" title="查看两倍上传量种子"><b class='twoup'>2x上传</b></a> |
+        <a onclick="searchPro('spstate',4)" href="javascript:void(0);" title="查看免费且两倍上传种子"><b class='twoupfree'>免费&amp;2x上传</b></a> |
+        <a onclick="searchPro('spstate',5)" href="javascript:void(0);" title="查看50%下载种子"><b class='halfdown'>50%下载</b></a> |
+        <a onclick="searchPro('spstate',6)" href="javascript:void(0);" title="查看50%下载且两倍上传种子"><b class='twouphalfdown'>50%下载&amp;2x上传</b></a> |
+        <a onclick="searchPro('spstate',7)" href="javascript:void(0);" title="查看30%下载种子"><b class='thirtypercent'>30%下载</b></a>"
+    `,
     'std_file' => "文件",
     'std_does_not_exist' => "不存在",
     'std_access_permission_note' => "!<br /><font color=\"blue\">在设定前，请确保已恰当设置文件和目录的访问权限。请参考下面。</font><br /><br />chmod -R 777 config (设置目录)。",

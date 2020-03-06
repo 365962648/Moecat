@@ -419,6 +419,8 @@ if ($SITE_ONLINE == "no") {
 <script type="text/javascript" src="javascript/scrollcontrol.js<?php echo $cssupdatedate ?>" ></script>
 <script type="text/javascript" src="javascript/sort.js<?php echo $cssupdatedate ?>" ></script>-->
     <script type="text/javascript" src="javascript/sort.js<?php echo $cssupdatedate ?>"></script>
+    // searchPro
+    <script type="text/javascript" src="javascript/searchPro/main.js<?php echo $cssupdatedate ?>"></script>
     <?
     print userccss();
     ?>
